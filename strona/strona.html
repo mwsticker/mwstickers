@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MW Stickers – Okleiny i Naklejki</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3b82f6', // niebieski akcent
+            secondary: '#111827', // ciemne tło
+            lightText: '#f3f4f6', // jasny tekst
+            cardBg: '#1f2937', // tło kart
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-secondary text-lightText font-sans">
+
+  <!-- Nagłówek z logo -->
+  <header class="flex items-center justify-center py-6 bg-secondary shadow-md">
+    <img src="logo.png" alt="Logo MW Stickers" class="h-16" />
+  </header>
+
+  <!-- Sekcja: O marce -->
+  <section class="min-h-screen flex flex-col items-center justify-center text-center px-6">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">MW Stickers</h1>
+    <p class="text-lg md:text-xl max-w-2xl mb-6">
+      Tworzymy unikalne naklejki na <b>ODI Plate</b>
+      które wyróżniają Twój sprzęt na każdym torze i ulicy.
+    </p>
+    <a href="#galeria" class="px-6 py-3 bg-primary text-white font-bold rounded-xl shadow-lg hover:bg-blue-500 transition-all">
+      Zobacz Galerię
+    </a>
+  </section>
+
+  <!-- Sekcja: Galeria produktów -->
+  <section id="galeria" class="py-16 px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">Nasze produkty</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="bg-cardBg rounded-2xl shadow-md overflow-hidden hover:scale-105 transition-transform">
+        <img src="produkt1.jpg" alt="Produkt 1" class="h-64 w-full object-cover" />
+      </div>
+      <div class="bg-cardBg rounded-2xl shadow-md overflow-hidden hover:scale-105 transition-transform">
+        <img src="produkt2.jpg" alt="Produkt 2" class="h-64 w-full object-cover" />
+      </div>
+      <div class="bg-cardBg rounded-2xl shadow-md overflow-hidden hover:scale-105 transition-transform">
+        <img src="produkt3.jpg" alt="Produkt 3" class="h-64 w-full object-cover" />
+      </div>
+      <div class="bg-cardBg rounded-2xl shadow-md overflow-hidden hover:scale-105 transition-transform">
+        <img src="produkt4.jpg" alt="Produkt 4" class="h-64 w-full object-cover" />
+      </div>
+      <div class="bg-cardBg rounded-2xl shadow-md overflow-hidden hover:scale-105 transition-transform">
+        <img src="produkt5.jpg" alt="Produkt 5" class="h-64 w-full object-cover" />
+      </div>
+      <div class="bg-cardBg rounded-2xl shadow-md overflow-hidden hover:scale-105 transition-transform">
+        <img src="produkt6.jpg" alt="Produkt 6" class="h-64 w-full object-cover" />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Sekcja: Opinie klientów -->
+  <section class="py-16 px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">Opinie klientów</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+      <div class="bg-cardBg p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow">
+        <p class="italic mb-4">“Mega jakość i trwałość naklejek – polecam każdemu!”</p>
+        <p class="font-semibold"></p>
+      </div>
+      <div class="bg-cardBg p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow">
+        <p class="italic mb-4">“Profesjonalne wykonanie, mój Surron wygląda jak nowe.”</p>
+        <p class="font-semibold"></p>
+      </div>
+      <div class="bg-cardBg p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow">
+        <p class="italic mb-4">“Szybka wysyłka i świetny kontakt – pełne 5/5.”</p>
+        <p class="font-semibold"> </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sekcja: Cennik -->
+  <section class="py-16 px-6 bg-secondary">
+    <h2 class="text-3xl font-bold text-center mb-10">Cennik</h2>
+    <div class="overflow-x-auto max-w-4xl mx-auto">
+      <table class="min-w-full text-left border border-gray-700 rounded-xl overflow-hidden">
+        <thead class="bg-cardBg">
+          <tr>
+            <th class="px-6 py-3 border-b border-gray-600">Produkt</th>
+            <th class="px-6 py-3 border-b border-gray-600">Cena (PLN)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bg-cardBg hover:bg-gray-700 transition-colors">
+            <td class="px-6 py-3 border-b border-gray-600">Naklejka Plastron</td>
+            <td class="px-6 py-3 border-b border-gray-600">60</td>
+          </tr>
+          <tr class="bg-cardBg hover:bg-gray-700 transition-colors">
+            <td class="px-6 py-3 border-b border-gray-600">Naklejka Błotnik tylni</td>
+            <td class="px-6 py-3 border-b border-gray-600">40</td>
+          </tr>
+          <tr class="bg-cardBg hover:bg-gray-700 transition-colors">
+            <td class="px-6 py-3 border-b border-gray-600">Naklejka EXT amortyzator</td>
+            <td class="px-6 py-3 border-b border-gray-600">40</td>
+          </tr>
+          <tr class="bg-cardBg hover:bg-gray-700 transition-colors">
+            <td class="px-6 py-3 border-b border-gray-600">Naklejka CHWDP 10 sztuk</td>
+            <td class="px-6 py-3 border-b border-gray-600">10</td>
+          </tr>
+          <tr class="bg-cardBg hover:bg-gray-700 transition-colors">
+            <td class="px-6 py-3 border-b border-gray-600">Naklejka Odi mała</td>
+            <td class="px-6 py-3 border-b border-gray-600">20</td>
+          </tr>
+          <tr class="bg-cardBg hover:bg-gray-700 transition-colors">
+            <td class="px-6 py-3 border-b border-gray-600">Dostawa InPost</td>
+            <td class="px-6 py-3 border-b border-gray-600">15</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Sekcja: Zakup przez Instagram -->
+  <section class="py-16 px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6">Kup nasze produkty</h2>
+    <p class="text-lg mb-4">Zakupy dostępne poprzez Instagram:</p>
+    <a href="https://instagram.com/w_maksyymiliann" target="_blank" class="text-primary font-bold text-xl hover:underline">
+      @w_maksyymiliann
+    </a>
+  </section>
+
+  <!-- Stopka -->
+  <footer class="py-6 text-center bg-secondary border-t border-gray-700">
+    <p class="text-gray-500">© <script>document.write(new Date().getFullYear())</script> MW Stickers – Wszystkie prawa zastrzeżone</p>
+  </footer>
+
+</body>
+</html>
